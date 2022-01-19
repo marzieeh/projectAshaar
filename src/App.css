@@ -1,0 +1,10 @@
+:root {
+  --orange-color: #ecc75b;
+}
+
+button {
+  border: none;
+  padding: 0;
+  outline: none;
+  cursor: pointer;
+}

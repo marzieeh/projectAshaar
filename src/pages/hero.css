@@ -1,0 +1,48 @@
+.hero--container {
+  background-color: #e5e5e5;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
+.hero--container .hero__pattern {
+  height: 100vh;
+  position: absolute;
+  left: 0;
+}
+
+.hero--container .introduction {
+  margin-right: 6rem;
+  display: flex;
+  align-items: center;
+}
+
+.hero--container .introduction .text__img {
+  /* padding-right: 4rem; */
+}
+
+.hero--container .introduction .introduction__inner__box {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.hero--container .introduction .introduction__inner__box button {
+  background-color: var(--orange-color);
+  padding: 8px;
+  border-radius: 10px;
+  font-weight: 700;
+}
+
+.hero--container .introduction .introduction__inner__box .faal__btn {
+  margin-right: 8px;
+}
+.hero--container .introduction .introduction__inner__box .button__box {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  margin-top: 1rem;
+}

@@ -1,0 +1,62 @@
+.fal--container {
+  background-image: url("../images/fal-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.fal--container .main__box__container {
+  background: rgba(236, 210, 118, 0.8);
+  border-radius: 15px;
+  width: 600.77px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-right: 80px;
+  height: 80vh;
+  padding-top: 20px;
+}
+
+.center__box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.fal--container .poem__box {
+  background: white;
+  border-radius: 15px;
+  font-size: 12px;
+  width: 500.77px;
+  height: 90vh;
+  overflow-y: auto;
+  padding-bottom: 20px;
+}
+
+.audio__show {
+  border-radius: 15px;
+}
+
+.fal--container div[id^="bn"],
+.fal--container div[id*=" bn"] {
+  margin: 10px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* margin: 0 5px; */
+}
+
+.back__home__btn {
+  background: #dfe9f3;
+  padding: 1rem;
+  border-radius: 10px 0;
+  margin: 20px 0;
+  font-weight: 700;
+}
