@@ -1,8 +1,9 @@
 //stackoverflow.com/questions/19266197/reactjs-convert-html-string-to-jsx
 import React, { useEffect, useState } from "react";
-import axios from "axios";
-import "./fal.css";
 import { useNavigate } from "react-router";
+import axios from "axios";
+
+import "./fal.css";
 
 function Faal() {
   const [data, setData] = useState([]);

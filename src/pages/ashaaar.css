@@ -33,11 +33,12 @@
 }
 
 .poet--main--box .gray--box {
-  width: 600px;
-  height: 80%;
+  width: 350px;
+  /* height: 600px; */
+
   background-color: #d0e3f5;
   position: absolute;
-  top: 25%;
+  top: 10%;
   right: 0;
   z-index: 7;
   display: flex;
@@ -45,7 +46,8 @@
   justify-content: center;
   flex-direction: column;
   direction: rtl;
-  padding: 0 2rem;
+  padding: 1rem 2rem;
+  overflow-y: auto;
 }
 
 .poem--main--box .cards {
@@ -64,7 +66,9 @@
   left: 4%;
   z-index: 9;
   overflow-x: hidden;
-  width: 90%;
+  overflow-y: auto;
+
+  width: 800px;
   height: 300px;
 }
 
@@ -83,11 +87,14 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  height: 700px;
+  overflow-y: auto;
   border-radius: 15px;
-  width: 600px;
+  /* width: 600px; */
   padding-left: 100px;
   background: white;
   padding: 0.5rem;
+  direction: rtl;
 }
 
 .card {

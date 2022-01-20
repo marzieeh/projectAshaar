@@ -1,13 +1,10 @@
 import React, { useState, useEffect, useRef } from "react";
 import { useNavigate } from "react-router";
-import "./ashaaar.css";
-import TarhBg from "../images/tarh1.png";
-import NextBtn from "../images/next-btn.png";
-import PrevBtn from "../images/prev-btn.png";
-import "./ashaar2.css";
-
 import axios from "axios";
-import Slider from "react-slick";
+
+import TarhBg from "../images/tarh1.png";
+import "./ashaaar.css";
+import "./ashaar2.css";
 
 function Ashaar() {
   const [data, setData] = useState([]);
@@ -22,22 +19,7 @@ function Ashaar() {
       .catch((err) => console.log(err));
   }, []);
 
-  // useEffect(() => {
-  //   const buttonRight = document.getElementById("slideRight");
-  //   const buttonLeft = document.getElementById("slideLeft");
-
-  //   buttonRight.onclick = function () {
-  //     document.getElementById("next").scrollLeft += 20;
-  //   };
-  //   buttonLeft.onclick = function () {
-  //     document.getElementById("previous").scrollLeft -= 20;
-  //   };
-  // }, []);
-  // useEffect(() => {
-  //   // console.log("fdfd" + nextBtnRef);
-  // }, [nextBtnRef]);
-  // nativeEvent.explicitOriginalTarget.scrollLeft
-  console.log(data);
+  // console.log(data);
 
   const scrollTrick = (scrollOffset) => {
     if (nextBtnRef) {
@@ -58,13 +40,6 @@ function Ashaar() {
             <a
               href="#"
               className="previous round"
-              // onClick={() => scrollTrick(-20)}
-              // (e) => {
-              // this.scrollLeft -= 20;
-              // document.getElementById("container").scrollLeft -= 20;
-              // e.nativeEvent.explicitOriginalTarget.scrollLeft += 20;
-              // console.log(e.nativeEvent.explicitOriginalTarget.scrollLeft);
-              // }
               onClick={() => scrollTrick(-80)}
             >
               &#8249;
@@ -73,10 +48,6 @@ function Ashaar() {
               &#8250;
             </a>
           </div>
-
-          {/* <img src={PrevBtn} alt="" />
-
-          <img src={NextBtn} alt="" /> */}
 
           {data.map((item, index) => (
             <div

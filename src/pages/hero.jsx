@@ -4,12 +4,18 @@ import "./hero.css";
 import Tarh from "../images/tarh.png";
 import BookImg from "../images/drawing-1.png";
 import HeroText from "../images/heroText.png";
+import MenuImg from "../images/header.png";
+import LogoImg from "../images/logo.png";
 // import HeroText from "";
 
 function Hero() {
   let navigate = useNavigate();
   return (
     <div className="hero--container">
+      <div className="header--menu">
+        <img src={MenuImg} alt="" />
+        <img src={LogoImg} alt="" />
+      </div>
       <img src={Tarh} alt="" className="hero__pattern" />
 
       <div></div>
